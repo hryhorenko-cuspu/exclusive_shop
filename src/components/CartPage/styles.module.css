@@ -1,0 +1,23 @@
+.wrapper {
+	margin-top: 3%;
+	padding: 0 11% 0 10%;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5%;
+	padding: 0 10px;
+}
+
+.headerItem {
+	width: 250px;
+	text-align: center;
+}
+
+@media screen and (max-width: 685px) {
+	.wrapper {
+		padding: 0 5%;
+	}
+}
+

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Nunito:wght@400;700&family=Poppins:wght@400;500;700&family=Quicksand:wght@400;600;700&display=swap');
+
+:root {
+  line-height: 1.5;
+
+  color: black;
+  background-color: #f9f9f9;
+}
+
+html,
+body {
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+.swiper-pagination-bullet {
+  height: 15px;
+  width: 15px;
+  background-color: rgb(255, 255, 255) !important; /* Change the color */
+}
+
+.swiper-pagination-bullet-active {
+  height: 12px;
+  width: 12px;
+  border: 3px solid white;
+  background-color: #db4444 !important; /* Change the color */
+}

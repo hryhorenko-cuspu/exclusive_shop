@@ -1,0 +1,16 @@
+.picker {
+	display: flex;
+}
+
+.picker button:nth-child(1) {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+
+.prickerButton {
+	padding: 15px !important;
+	font-weight: bolder;
+	font-size: xx-large;
+}
+

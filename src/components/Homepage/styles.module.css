@@ -1,0 +1,84 @@
+.hero {
+  margin-top: 16px;
+  padding: 0px 40px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.list {
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+.listItem {
+  display: block;
+  text-decoration: none;
+  width: 200px;
+  color: black;
+  margin-bottom: 16px;
+}
+
+li a {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+
+li:hover a {
+  font-weight: 700;
+}
+
+li:hover .arrowIcon {
+  display: inline-block;
+}
+
+.arrowIcon {
+  content: url('../../assets/DropDown.svg');
+  display: none;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 2px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.slider {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slide {
+  width: 100%;
+}
+
+.slide img {
+  height: auto;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1025px) {
+  .hero {
+    padding: 0% 5%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .hero {
+    padding: 0% 2%;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr;
+  }
+  .list {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 686px) {
+}

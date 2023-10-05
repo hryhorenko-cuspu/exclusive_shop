@@ -1,0 +1,124 @@
+.wrapper {
+	margin: 5% 10%;
+}
+
+.breadcrumbs a, span {
+	color: grey;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.breadcrumbs a:last-child {
+	color: black;
+	font-weight: 800;
+}
+
+.product {
+	margin-top: 80px;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 5%;
+	grid-auto-flow: row;
+}
+
+.img img {
+	max-width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 4px;
+}
+
+.title {
+	font-family: 'Inter';
+	font-size: 24px;
+	font-weight: 600;
+	margin-top: 0;
+}
+
+.price {
+	font-family: 'Inter';
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.description {
+	font-size: 14px;
+	max-width: 600px;
+	word-wrap: break-word;
+	line-height: 21px; 
+}
+
+.buy {
+	display: flex;
+	justify-content: space-between;
+	height: 50px;
+	margin-bottom: 40px;
+}
+
+.buyButton {
+	padding: 5px 60px;
+	min-width: 250px;
+}
+
+.wishlist {
+	border: 1px solid rgba(0, 0, 0, 0.50);
+	border-radius: 4px;
+	padding: 0% 1.5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.delivery {
+	padding: 10px 16px;
+	display: flex;
+	align-items: center;
+	border-radius: 4px;
+	border: 1px solid rgba(0, 0, 0, 0.50);
+	font-size: 16px;
+}
+
+.delivery svg {
+	margin-right: 40px;
+}
+
+@media screen and (max-width: 685px) {
+	.wrapper {
+		margin: 5%;
+	}
+
+	.product {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
+	}
+
+	.buyButton {
+		padding: 5px 20px;
+		min-width: 150px;
+	}
+}
+
+@media screen and (max-width: 426px) {
+	.wrapper {
+		margin: 5%;
+	}
+
+	hr {
+		margin-bottom: 40px !important;
+	}
+
+	.buy {
+		flex-direction: column;
+		align-items: center;
+		height: 250px;
+	}
+
+	.buyButton {
+		padding: 5px 30px;
+		min-width: 200px;
+		height: 60px;
+	}
+}
+
+

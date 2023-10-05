@@ -1,0 +1,36 @@
+.buttonSubmit {
+	margin: 0 auto;
+	margin-top: 10%;
+}
+
+.forgot {
+	text-decoration: none;
+	color: black;
+	display: block;
+	text-align: right;
+	margin-top: 7%;
+}
+
+.radio {
+	display: flex;
+	justify-content: space-around;
+}
+
+.formLabel {
+	display: block;
+	font-size: 18px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+.error {
+	position: absolute;
+	margin-top: 2px;
+	font-size: 14px;
+	color: red;
+	overflow: hidden;
+}
+
+.field {
+	position: relative;
+}

@@ -1,0 +1,28 @@
+.card {
+  padding: 5% 5%;
+  border-radius: 10px !important;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
+  transition: all 0.3s !important;
+  cursor: pointer !important;
+}
+
+.title,
+.price {
+  color: black;
+}
+
+.card:hover {
+  box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px !important;
+}
+
+.description {
+  display: -moz-box;
+  display: -webkit-box;
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 40px;
+}

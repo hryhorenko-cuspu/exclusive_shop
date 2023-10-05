@@ -1,0 +1,112 @@
+.wrapper {
+  padding: 0 40px;
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.productsWrapper {
+  width: 100%;
+  /* display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto; */
+  margin-bottom: 5%;
+}
+
+.error {
+  color: #db4444;
+  text-align: center;
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+.list {
+  list-style-type: none;
+  width: 180px;
+  padding-inline-start: 0px;
+}
+
+.listItem {
+  width: 200px;
+  color: black;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.listItem:hover div {
+  font-weight: bold;
+}
+
+.listItem:hover .arrowIcon {
+  display: inline-block;
+}
+
+.arrowIcon {
+  content: url('../../assets/DropDown.svg');
+  display: none;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 2px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.products {
+  width: 100%;
+  display: grid;
+  /* align-items: stretch; */
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-auto-flow: row;
+  justify-content: center;
+  gap: 16px;
+
+  @media screen and (max-width: 1440px) {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+  }
+
+  @media screen and (max-width: 1124px) {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+
+  @media screen and (max-width: 850px) {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    justify-content: center;
+  }
+}
+
+.buttonsPagination {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.selectedCategory {
+  font-weight: bold;
+}
+
+.selectedCategory .arrowIcon {
+  display: inline-block;
+}
+
+@media screen and (max-width: 685px) {
+  .wrapper {
+    padding: 0 7%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+  }
+  .list a {
+    width: 100%;
+  }
+}
